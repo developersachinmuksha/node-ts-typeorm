@@ -1,0 +1,29 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Node with typescript and typeorm",
+      "version": "v1"
+    },
+    "paths": {
+      "/get": {
+        "get": {
+          "operationId": "getAllUsers",
+          "summary": "List all users",
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Get all users",
+              "examples": {
+                "application/json": "[{\"id\":9,\"firstName\":\"Timber\",\"lastName\":\"Saw\",\"age\":25,\"addresses\":[{\"id\":1,\"address\":\"address\",\"city\":\"city\",\"state\":\"statee\"},{\"id\":2,\"address\":\"address\",\"city\":\"city\",\"state\":\"statee\"}]},{\"id\":1,\"firstName\":\"Sachin1\",\"lastName\":\"Muksha1\",\"age\":25,\"addresses\":[]},{\"id\":2,\"firstName\":\"Sachin2\",\"lastName\":\"Muksha2\",\"age\":26,\"addresses\":[]}]"
+              }
+            }
+          }
+        }
+      }
+    },
+    "consumes": [
+      "application/json"
+    ]
+  }
